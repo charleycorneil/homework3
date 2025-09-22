@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Title</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="wrap">
+      <h1>Homework 3 — Local Storage</h1>
+      <p class="sub">
+        Add students and display them from <code>localStorage</code>.
+      </p>
+    </header>
+
+    <main class="wrap grid">
+      <section class="card">
+        <h2>Add Student</h2>
+        <form id="studentForm" novalidate>
+          <div class="row">
+            <label for="firstName">First Name</label>
+            <input
+              id="firstName"
+              name="firstName"
+              type="text"
+              placeholder="Ada"
+              required
+            />
+          </div>
+
+          <div class="row">
+            <label for="lastName">Last Name</label>
+            <input
+              id="lastName"
+              name="lastName"
+              type="text"
+              placeholder="Lovelace"
+              required
+            />
+          </div>
+
+          <div class="row">
+            <label for="age">Age</label>
+            <input
+              id="age"
+              name="age"
+              type="number"
+              min="0"
+              step="1"
+              placeholder="20"
+              required
+            />
+          </div>
+
+          <div class="row">
+            <label for="phone">Phone</label>
+            <input
+              id="phone"
+              name="phone"
+              type="tel"
+              placeholder="555-123-4567"
+              required
+            />
+          </div>
+
+          <div class="row">
+            <label for="email">Email</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="ada@example.com"
+              required
+            />
+          </div>
+
+          <div class="row">
+            <label for="classes">Classes (comma-separated)</label>
+            <input
+              id="classes"
+              name="classes"
+              type="text"
+              placeholder="N423, I211, I308"
+              required
+            />
+          </div>
+
+          <div class="actions">
+            <button type="submit" id="addBtn">Add Student</button>
+            <button type="button" id="showBtn" class="secondary">
+              Show All
+            </button>
+            <button type="button" id="clearBtn" class="danger">
+              Clear All
+            </button>
+          </div>
+
+          <p class="hint">
+            Stored under the key <code>students</code> in localStorage.
+          </p>
+        </form>
+      </section>
+
+      <section class="card">
+        <h2>Stored Students</h2>
+        <div id="app" class="table-wrap" aria-live="polite"></div>
+      </section>
+    </main>
+
+    <footer class="wrap foot">
+      <small>Homework 3 | N423 | Local Storage</small>
+    </footer>
+
+    <script src="lib/jquery-3.7.1.min.js"></script>
+    <script src="app/app.js"></script>
+  </body>
+</html>
