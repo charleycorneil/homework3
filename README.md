@@ -16,7 +16,7 @@
 
 ## Run locally
 
-Open `index.html` in a modern browser. Because it uses `localStorage`, data persists in that browser.
+Open `index.html` in a browser. Because it uses `localStorage`, data persists in that browser.
 
 ## Links
 
