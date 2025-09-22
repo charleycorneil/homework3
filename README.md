@@ -18,7 +18,7 @@
 
 Open `index.html` in a modern browser. Because it uses `localStorage`, data persists in that browser.
 
-## What to submit
+## Links
 
-- Your **GitHub repo link**.
-- Your **Web4 URL** to the running app.
+- Web4:
+  https://in-info-web4.luddy.indianapolis.iu.edu/~chelcorn/homework3/
